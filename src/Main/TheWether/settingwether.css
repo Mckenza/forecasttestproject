@@ -1,0 +1,40 @@
+section{
+    height: 100%;
+    width: calc(100% - 10px);
+}
+
+.forecast_today{
+    height: 250px;
+    width: 100%;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forecast_wind{
+    height: 250px;
+    width: 100%;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forecast_pressure{
+    height: 150px;
+    width: 100%;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forecast_wet{
+    height: 150px;
+    width: 100%;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section span{
+    font-size: 20px;
+}

@@ -1,0 +1,36 @@
+.left_side_menu{
+    width: 20%;
+    height: 100%;
+    background-color: darkorange;
+}
+
+.days_value{
+    height: 225px;
+    width: 80%;
+    margin: 15px auto;
+    border-bottom: 2px rgba(112, 112, 112, 0.638) solid;
+}
+
+.another_setting{
+    height: 125px;
+    width: 80%;
+    margin: 15px auto;
+}
+
+.days_value ul, .another_setting ul{
+    height: 100%;
+    width: 100%;
+}
+
+.days_value ul li, .another_setting ul li{
+    margin: 8px;
+    list-style: none;
+    
+}
+
+.days_value ul li button, .another_setting ul li button{
+    border: none;
+    background-color: transparent;
+    color: blue;
+    font-size: 20px;
+}
