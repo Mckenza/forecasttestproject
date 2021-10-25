@@ -9,10 +9,10 @@ export default class LeftMenu extends React.Component{
                 <div className = "days_value">
                     <ul>
                         <li>
-                            <button>Сейчас</button>
+                            <button onClick = {this.props.buttons.now}>Сейчас</button>
                         </li>
                         <li>
-                            <button>Сегодня</button>
+                            <button onClick = {this.props.buttons.today}>Сегодня</button>
                         </li>
                         <li>
                             <button>Завтра</button>

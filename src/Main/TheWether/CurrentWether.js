@@ -39,7 +39,7 @@ export default class CurrentWether extends React.Component {
             bufArrayWind.push({
                 time: `${value}:00`,
                 degree: 23,
-                windspead: obj[value].wind_kph + ' км/ч',
+                windspead: obj[value].wind_kph,
                 windTemp: obj[value].windchill_c > 0 ? '+' + obj[value].windchill_c : obj[value].windchill_c, 
             });
             bufArrayWet.push({

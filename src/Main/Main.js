@@ -2,9 +2,35 @@ import React from "react";
 import LeftMenu from '../Main/LeftMenu/LeftMenu';
 import './main.css';
 import CurrentWether from "./TheWether/CurrentWether";
+import WetherNow from "./TheWether/WetherNow/WetherNow";
 
 
 export default class Main extends React.Component {
+
+    constructor(){
+        super();
+        this.state = {
+            wetherNow: false,
+            wetherToday: true,
+        }
+
+        this.wetherTodayClick = this.wetherTodayClick.bind(this);
+        this.wetherNowClick = this.wetherNowClick.bind(this);
+    }
+
+    wetherTodayClick(){
+        this.setState({
+            wetherNow: false,
+            wetherToday: true,
+        })
+    }
+
+    wetherNowClick(){
+        this.setState({
+            wetherNow: true,
+            wetherToday: false,
+        })
+    }
 
     render() {
         return (
@@ -13,10 +39,9 @@ export default class Main extends React.Component {
 
                 </nav>
                 <div className="wrap_article">
-                    <LeftMenu />
+                    <LeftMenu buttons = {{now: this.wetherNowClick, today: this.wetherTodayClick}}/>
                     <article>
-                        <CurrentWether/>
-
+                        { this.state.wetherNow ? <WetherNow/> : <CurrentWether/>}
                     </article>
                 </div>
 
