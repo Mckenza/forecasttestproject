@@ -25,7 +25,7 @@ export default class WetherNow extends React.Component {
         this.setState(prev => ({
             wetherNow: {
                 ...prev,
-                tempNow: obj.temp_c,
+                tempNow: obj.temp_c > 0 ? '+' + obj.temp_c : obj.temp_c,
                 tempfeel: obj.feelslike_c,
                 humid: obj.humidity,
                 wind: obj.wind_kph,
@@ -61,13 +61,11 @@ export default class WetherNow extends React.Component {
         return (
             <div className="wether_now_wrap">
                 <div className="icon_now">
-                    <img src = {this.state.wetherNow.iconW.url} title = {this.state.wetherNow.iconW.title} width = "150px" height = "150px"></img>
+                    <img src = {this.state.wetherNow.iconW.url} title = {this.state.wetherNow.iconW.title} width = "120px" height = "120px"></img>
+                    <div className = "temperature_now">{this.state.wetherNow.tempNow}</div>
                 </div>
                 <div className="full_info_wether">
                     <div className="list_info">
-                        <div>
-                            <span>Температура ...................... {this.state.wetherNow.tempNow}</span>
-                        </div>
                         <div>
                             <span>По ощущению .......................... {this.state.wetherNow.tempfeel}</span>
                         </div>
@@ -79,7 +77,7 @@ export default class WetherNow extends React.Component {
                             <span>Ветер .................................. {this.state.wetherNow.wind + 'км/ч'}</span>
                         </div>
                         <div>
-                            <span>Давление ....................... {this.state.wetherNow.press + 'мм рт. сб'}</span>
+                            <span>Давление ....................... {this.state.wetherNow.press + ' мм рт. сб'}</span>
                         </div>
                     </div>
                 </div>

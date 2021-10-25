@@ -40,7 +40,7 @@ export default class Main extends React.Component {
                 </nav>
                 <div className="wrap_article">
                     <LeftMenu buttons = {{now: this.wetherNowClick, today: this.wetherTodayClick}}/>
-                    <article>
+                    <article className = "main_part_app">
                         { this.state.wetherNow ? <WetherNow/> : <CurrentWether/>}
                     </article>
                 </div>

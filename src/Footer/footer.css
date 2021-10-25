@@ -1,6 +1,6 @@
 footer{
     height: 5vh;
     width: 100%;
-    background-color: darkred;
     margin-top: 5px;
+    border-top: 2px black solid;
 }

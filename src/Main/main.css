@@ -1,27 +1,27 @@
 main{
     width: 100%;
-    height: calc(90vh - 10px);
+    height: calc(90vh - 14px);
 }
 
 nav{
-    height: 40px;
+    height: 10px;
     width: 100%;
-    background-color: cyan;
 }
 
 .wrap_article{
-    height: calc(100% - 40px);
+    height: calc(100% - 17px);
     width: 100%;
     display: flex;
 
 }
 
-article{
-    height: 100%;
+.main_part_app{
+    height: 100% ;
     width: 80%;
     overflow-y: scroll;
+    padding: 0;
 }
 
-article::-webkit-scrollbar {
+.main_part_app::-webkit-scrollbar {
     width: 0;
   }

@@ -19,16 +19,7 @@ export default class LeftMenu extends React.Component{
                         </li>
                         <li>
                             <button>На 3 дня</button>
-                        </li>
-                        <li>
-                            <button>На 10 дней</button>
-                        </li>
-                        <li>
-                            <button>На 14 Дней</button>
-                        </li>
-                        <li>
-                            <button>На месяц</button>
-                        </li>  
+                        </li> 
                     </ul>
                 </div>
                 <div className = "another_setting">

@@ -1,7 +1,9 @@
 .left_side_menu{
     width: 20%;
     height: 100%;
-    background-color: darkorange;
+    background-color: white;
+    margin: 5px 5px 5px 0;
+    border-radius: 8px;
 }
 
 .days_value{
@@ -23,14 +25,15 @@
 }
 
 .days_value ul li, .another_setting ul li{
-    margin: 8px;
+    margin-top: 15px;
     list-style: none;
-    
+    box-shadow: 1px 1px 2px rgb(123, 123, 123);
+    border-radius: 4px;
 }
 
 .days_value ul li button, .another_setting ul li button{
     border: none;
     background-color: transparent;
-    color: blue;
+    color: rgb(77, 77, 77);
     font-size: 20px;
 }

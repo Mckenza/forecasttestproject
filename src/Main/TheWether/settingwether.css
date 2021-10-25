@@ -3,12 +3,23 @@ section{
     width: calc(100% - 10px);
 }
 
+section h1{
+    margin: 10px;
+    display: block;
+    width: 100%;
+    background: linear-gradient(90deg, white, rgb(240, 240, 240));;
+    border-radius: 6px;
+    padding-left: 15px;
+}
+
 .forecast_today{
     height: 250px;
     width: 100%;
     margin: 5px;
     display: flex;
     justify-content: space-between;
+    background-color: white;
+    border-radius: 6px;
 }
 
 .forecast_wind{
@@ -17,22 +28,28 @@ section{
     margin: 5px;
     display: flex;
     justify-content: space-between;
+    background-color: white;
+    border-radius: 6px;
 }
 
 .forecast_pressure{
-    height: 150px;
+    height: 100px;
     width: 100%;
     margin: 5px;
     display: flex;
     justify-content: space-between;
+    background-color: white;
+    border-radius: 6px;
 }
 
 .forecast_wet{
-    height: 150px;
+    height: 100px;
     width: 100%;
     margin: 5px;
     display: flex;
     justify-content: space-between;
+    background-color: white;
+    border-radius: 6px;
 }
 
 section span{

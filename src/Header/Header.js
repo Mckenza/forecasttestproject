@@ -7,7 +7,7 @@ export default class Header extends React.Component{
         return (
             <header>
                 <div className = 'logo_header'>
-                    <span>MyMeteo</span>
+                    <span>Dayli Wether</span>
                 </div>
             </header>
         )
